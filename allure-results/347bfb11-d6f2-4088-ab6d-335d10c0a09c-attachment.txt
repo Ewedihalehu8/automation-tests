@@ -1,0 +1,2 @@
+allure-result does not exist
+Report successfully generated to allure-report
