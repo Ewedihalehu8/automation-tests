@@ -1,7 +1,5 @@
 import os
-import shutil
 import sys
-
 import allure
 import pytest
 from selenium import webdriver
@@ -43,7 +41,7 @@ def init_driver(request):
     log = conf.logcon()
     log.info('setup_class')
     # service = Service(get_par_path())
-    service = Service(executable_path='chromedriver')
+    service = Service(executable_path='/usr/local/bin/chromedriver')
     driver = webdriver.Chrome(service=service)
     # driver_path = os.path.join(get_par_path(),"driver/chromedriver")
     # driver = webdriver.Chrome(executable_path=driver_path)

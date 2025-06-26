@@ -10,7 +10,7 @@ from utils.read_yaml import get_yaml_data
 
 
 with allure.step('0.从数据文件中读取添加职称数据信息'):
-    yaml_path = os.path.join(get_par_path(),"config/config.yaml")
+    yaml_path = os.path.join(get_par_path(),"datafile/addjob_data.yaml")
     test_data = get_yaml_data(yaml_path)
 
 class TestClass(object):
